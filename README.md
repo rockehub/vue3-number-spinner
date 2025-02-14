@@ -1,39 +1,39 @@
 # vue3-number-spinner
 
-This is a direct port of [svelte-number-spinner](https://github.com/bohnacker/svelte-number-spinner) from Svelte to Vue 3.
+This template should help get you started developing with Vue 3 in Vite.
 
-## Demo
+## Recommended IDE Setup
 
-[Number spinner demo](https://the-source.de/vue3-number-spinner/)
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-## Installation
+## Type Support for `.vue` Imports in TS
 
-```bash
-npm install vue3-number-spinner
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+
+## Customize configuration
+
+See [Vite Configuration Reference](https://vite.dev/config/).
+
+## Project Setup
+
+```sh
+npm install
 ```
 
-## Usage
+### Compile and Hot-Reload for Development
 
-```vue
-<template>
-  <number-spinner v-model="value" :min="0" :max="100" />
-</template>
+```sh
+npm run dev
+```
 
-<script>
-import { ref } from 'vue'
+### Type-Check, Compile and Minify for Production
 
-import { NumberSpinner } from 'vue3-number-spinner'
+```sh
+npm run build
+```
 
-export default {
-  name: 'App',
-  components: {
-    NumberSpinner,
-  },
-  setup() {
-    const value = ref(50)
+### Lint with [ESLint](https://eslint.org/)
 
-    return { value }
-  },
-}
-</script>
+```sh
+npm run lint
 ```
