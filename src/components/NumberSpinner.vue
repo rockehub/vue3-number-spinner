@@ -44,7 +44,7 @@
 
 <script setup lang="ts">
 import { computed, reactive, ref, watch } from 'vue';
-import { useEventListener } from '../composables/useEventListener';
+import { useEventListener } from '@/composables/useEventListener';
 
 defineProps({
   modelValue: { type: Number, default: 0 },
