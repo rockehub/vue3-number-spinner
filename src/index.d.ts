@@ -1,6 +1,6 @@
 import { DefineComponent } from 'vue';
 
-declare module 'vue3-number-spinner' {
+declare module 'ts-vue3-number-spinner' {
   export interface Vue3NumberSpinnerProps {
     modelValue: number;
     min: number;
@@ -40,7 +40,7 @@ declare module 'vue3-number-spinner' {
     (event: 'update:modelValue', value: number): void;
   };
 
-  const Vue3NumberSpinner: DefineComponent<Vue3NumberSpinnerProps, {}, any>;
+  const NumberSpinner: DefineComponent<Vue3NumberSpinnerProps, {}, any>;
 
-  export default Vue3NumberSpinner;
+  export default NumberSpinner;
 }

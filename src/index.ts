@@ -1,1 +1,1 @@
-export { default as NumberSpinner } from './components/NumberSpinner.vue'
+export { default } from './components/NumberSpinner.vue';
