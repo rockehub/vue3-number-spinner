@@ -13,7 +13,7 @@ npm install ts-vue3-number-spinner
 
 <script lang="ts" setup>
   import { ref } from 'vue'
-  import { NumberSpinner } from 'ts-vue3-number-spinner'
+  import  NumberSpinner  from 'ts-vue3-number-spinner';
 
   const value = ref<number>(50) // TypeScript type definition for the value
 </script>
